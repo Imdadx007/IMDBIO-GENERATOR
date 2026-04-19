@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your professional college student bio data online for free. Generate and download beautiful PDF bio data in minutes.">
+    <meta name="keywords" content="bio data form, online bio data, college bio data, student bio data maker">
+    <meta name="author" content="Bio Data Generator">
+    <title>Create Your Bio Data - Bio Data Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+    <!-- Google AdSense (Uncomment after approval) -->
+    <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+         crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📋</span>
+                <span>Bio Data Generator</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="form.html" class="nav-link active">Create Bio Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- main form page wrapper -->
+    <div class="form-page-wrapper">
+        <!-- main container div -->
+        <div class="form-container">
+        <!-- form title -->
+        <h1>My Bio Data Form</h1>
+
+        <!-- the form starts here -->
+        <form action="/submit" method="post" enctype="multipart/form-data">
+
+            <!-- personal info section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <!-- full name -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <!-- father name -->
+                <label for="fatherName">Father's Name:</label>
+                <input type="text" id="fatherName" name="fatherName" required>
+
+                <!-- date of birth -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- gender radio buttons -->
+                <div class="radio-group">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <!-- address -->
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <!-- phone -->
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- photo upload -->
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </fieldset>
+
+            <!-- academic info section -->
+            <fieldset>
+                <legend>Academic Information</legend>
+
+                <!-- college name -->
+                <label for="collegeName">College Name:</label>
+                <input type="text" id="collegeName" name="collegeName" required>
+
+                <!-- course -->
+                <label for="course">Course/Program:</label>
+                <input type="text" id="course" name="course" required>
+
+                <!-- year of study -->
+                <label for="yearOfStudy">Year of Study:</label>
+                <select id="yearOfStudy" name="yearOfStudy" required>
+                    <option value="">Select Year</option>
+                    <option value="1">1st Year</option>
+                    <option value="2">2nd Year</option>
+                    <option value="3">3rd Year</option>
+                    <option value="4">4th Year</option>
+                    <option value="5">5th Year</option>
+                </select>
+
+                <!-- roll number -->
+                <label for="rollNumber">Roll Number/Student ID:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+
+                <!-- gpa -->
+                <label for="gpa">Current GPA/CGPA:</label>
+                <input type="number" id="gpa" name="gpa" step="0.01" min="0" max="10" required>
+
+                <!-- previous education -->
+                <label for="previousEducation">Previous Education (School/College):</label>
+                <textarea id="previousEducation" name="previousEducation" rows="3" required></textarea>
+            </fieldset>
+
+            <!-- additional info section -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <!-- hobbies -->
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" name="hobbies" rows="2"></textarea>
+
+                <!-- skills -->
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="2"></textarea>
+
+                <!-- emergency contact -->
+                <label for="emergencyContact">Emergency Contact Name:</label>
+                <input type="text" id="emergencyContact" name="emergencyContact" required>
+
+                <!-- emergency phone -->
+                <label for="emergencyPhone">Emergency Contact Phone:</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone" required>
+
+                <!-- declaration checkbox -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    <label for="declaration">I declare that the information provided is true and correct to the best of my knowledge.</label>
+                </div>
+            </fieldset>
+
+            <!-- submit button -->
+            <button type="submit">Submit Bio Data</button>
+        </form>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bio Data Generator</h4>
+                    <p>Create beautiful, professional bio data in minutes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="form.html">Create Bio Data</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@biodatagenerator.com</p>
+                    <p>Support: 24/7 Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bio Data Generator. All rights reserved.</p>
+                <p><a href="privacy-policy.html">Privacy Policy</a> • <a href="terms.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="form.js"></script>
+</body>
+</html>
+
