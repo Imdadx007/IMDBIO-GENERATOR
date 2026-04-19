@@ -253,7 +253,7 @@ Setup:
 
 ## 📞 Support & Contacts
 
-- **Email**: support@biodatagenerator.com
+- **Email**: whitehatlover07@gmail.com
 - **Website**: biodatagenerator.com
 - **Social**: @biodatagenerator (Instagram, Facebook, Twitter)
 
