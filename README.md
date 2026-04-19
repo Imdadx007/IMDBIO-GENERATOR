@@ -255,7 +255,7 @@ Setup:
 
 - **Email**: whitehatlover07@gmail.com
 - **Website**: biodatagenerator.com
-- **Social**: @biodatagenerator (Instagram, Facebook, Twitter)
+- **Social**: @imd_x08 (Instagram, Facebook, Twitter)
 
 ---
 
